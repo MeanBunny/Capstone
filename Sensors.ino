@@ -150,14 +150,5 @@ void loop() {
     relayStartMillis = currentMillis;
   }
 
-  if (relayOn && currentMillis - relayStartMillis >= relayOnDuration) {
-    Serial.println("Turning relay OFF after duration");
-    digitalWrite(RELAY_PIN, LOW);
-    relayOn = false;
-  } else if (soilMoisturePercent >= 55) {
-    Serial.println("Turning relay OFF due to high moisture");
-    digitalWrite(RELAY_PIN, LOW);
-    relayOn = false;
-  }
 
 }
