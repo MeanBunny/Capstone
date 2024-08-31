@@ -143,10 +143,7 @@ void loop() {
   Serial.print("Relay Status: ");
   Serial.println(relayOn ? "ON" : "OFF");
 
-  if (soilMoisturePercent <= 20 && !relayOn) {
-    
-  
-  }
+
 
 
 }
