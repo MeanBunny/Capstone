@@ -77,8 +77,18 @@ void loop() {
     http.beginBody();
     http.print(postData);
     http.endRequest();
-    
+
+    int httpResponseCode = http.responseStatusCode();
+    String response = http.responseBody();
+
+    Serial.println(httpResponseCode);
+    Serial.println(response);
   }
+  else{
+    Serial.println("Wifi Disconnected");
+  }
+
+  
 
   if (soilMoisturePercent < 0) soilMoisturePercent = 0;
   if (soilMoisturePercent > 100) soilMoisturePercent = 100;
