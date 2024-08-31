@@ -140,9 +140,6 @@ void loop() {
 
   unsigned long currentMillis = millis();
 
-  Serial.print("Relay Status: ");
-  Serial.println(relayOn ? 
-
 
 
 }
