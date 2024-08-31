@@ -144,8 +144,6 @@ void loop() {
   Serial.println(relayOn ? "ON" : "OFF");
 
   if (soilMoisturePercent <= 20 && !relayOn) {
-    Serial.println("Turning relay ON");
-    digitalWrite(RELAY_PIN, HIGH);
     
   
   }
