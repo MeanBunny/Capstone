@@ -138,7 +138,7 @@ void loop() {
 
   Serial.println("______________________________");
 
-  unsigned long currentMillis = millis();
+  unsigned long currentMillis =
 
 
 
