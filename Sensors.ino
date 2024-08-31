@@ -147,7 +147,7 @@ void loop() {
     Serial.println("Turning relay ON");
     digitalWrite(RELAY_PIN, HIGH);
     relayOn = true;
-    relayStartMillis = currentMillis;
+  
   }
 
 
